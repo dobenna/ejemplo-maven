@@ -69,7 +69,7 @@ pipeline {
            stage("Paso 5: Subir Artefacto a Nexus"){
             steps {
                 script{
-                    nexusPublisher nexusInstanceId: 'Nexus_Lab4',
+                    nexusPublisher nexusInstanceId: 'nexus_lab4',
                         nexusRepositoryId: 'Repo_lab_mod4',
                         packages: [
                             [$class: 'MavenPackage',
